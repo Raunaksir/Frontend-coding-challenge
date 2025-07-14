@@ -1,0 +1,78 @@
+/* Background + Centering */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #dff6ff, #b8e0ff, #86c8ff);
+  min-height: 100vh;
+}
+
+/* Main container */
+.landing-container {
+  max-width: 500px;
+  margin: auto;
+  margin-top: 15vh;
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+/* Title & Subtitle */
+.landing-container h1 {
+  font-size: 2.5rem;
+  color: #0077cc;
+  margin-bottom: 10px;
+}
+
+.landing-container p {
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 30px;
+}
+
+/* Button group */
+.btn-group {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Styled buttons */
+.landing-btn {
+  padding: 12px 28px;
+  font-size: 1rem;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.landing-btn:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Responsive for mobile */
+@media (max-width: 480px) {
+  .landing-container {
+    margin: 10vh 20px;
+    padding: 30px 20px;
+  }
+
+  .landing-container h1 {
+    font-size: 2rem;
+  }
+
+  .btn-group {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .landing-btn {
+    width: 100%;
+  }
+}
